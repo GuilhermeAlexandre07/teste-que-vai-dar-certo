@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Lanchonete Sabor & Cia</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+
+        <div class="button-acessibilidade">
+            <button onclick="acessibilidade()">Acessibilidade</button>
+        </div>
+
+        <div class="text-header">
+            <h1 id="header">Lanchonete Sabor & Cia</h1>
+            <p>Confira nosso cardápio delicioso!</p>
+        </div>
+    </header>
+
+    <main class="menu">
+        <div class="carrossel">
+
+            <div class="carousel">
+                <div class="image-container" id="imgs">
+                    <img src="src/img/ChatGPT Image 3 de set. de 2025, 15_19_16.png" alt="first">
+                    <img src="src/img/ChatGPT Image 3 de set. de 2025, 15_04_44.png" alt="second">
+                    <img src="src/img/ChatGPT Image 3 de set. de 2025, 15_54_50.png" alt="second">
+                    <img src="src/img/ChatGPT Image 3 de set. de 2025, 15_04_44.png" alt="second">
+                </div>
+            </div>
+        </div>
+
+        <section class="categoria">
+            <h2>🍔 Lanches</h2>
+            <div class="item">
+                <h3>X-Burguer</h3>
+                <p>Pão, hambúrguer, queijo, alface e tomate.</p>
+                <span class="preco">R$ 12,00</span>
+            </div>
+            <div class="item">
+                <h3 class="text-card">X-Salada</h3>
+                <p class="text-card-desc">Pão, hambúrguer, queijo, alface, tomate e maionese.</p>
+                <span class="preco">R$ 14,00</span>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>🥤 Bebidas</h2>
+            <div class="item">
+                <h3 class="text-card">Refrigerante Lata</h3>
+                <p class="text-card-desc">Coca-Cola, Guaraná, Fanta, etc.</p>
+                <span class="preco">R$ 6,00</span>
+            </div>
+            <div class="item">
+                <h3 class="text-card">Suco Natural</h3>
+                <p class="text-card-desc">Laranja, abacaxi, maracujá, entre outros.</p>
+                <span class="preco">R$ 8,00</span>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>🍟 Porções</h2>
+            <div class="item">
+                <h3 class="text-card">Batata Frita</h3>
+                <p class="text-card-desc">Porção média de batatas crocantes.</p>
+                <span class="preco">R$ 10,00</span>
+            </div>
+            <div class="item">
+                <h3>Frango à passarinho</h3>
+                <p>Porção servida com limão e alho frito.</p>
+                <span class="preco">R$ 18,00</span>
+            </div>
+        </section>
+    </main>
+
+    <span id="acessibilidade">
+        <span> 
+            <div class="content-acessibilidade">
+        
+                <aside class="acessibilidade-style">
+                    <div class="botao-fechar">
+                        <span id="butaoFechar" aria-label="Fechar" onclick="buttonFechar()">×</span>
+                    </div>
+                    <h2>Opções de Acessibilidade</h2>
+                    <div class="contraste">
+                        <button onclick="alterarContraste()" id="alterar-contraste">Alto Contraste</button>
+                        <span class="circulo-contraste"></span>
+                    </div>
+                    <h2>Tamanho da fonte</h3>
+                    <button onclick="fontPadrao()" id="font-padrao">Padrão</button>
+                    <button onclick="fontGrande()" id="font-grande">Grande</button>
+                    <button onclick="fontExtragrande()" id="font-extra-grande">Extra Grande</button>
+                </aside>
+            </div>
+        </span>
+    </span>
+
+    <div class="container">
+        <h1>Faça Aqui o Seu Pedido</h1>
+        <form id="itemForm">
+            <input type="text" id="item" placeholder="Desejo um..." value="" onblur="validarItem()">
+
+            <button onclick="cadastrar()">Incluir ao Carrinho</button>
+        </form>
+        <h2>Carrinho de compras!</h2>
+        <ul id="listaPedidos"></ul>
+    </div>
+
+    <footer>
+        <p>© 2025 Lanchonete Sabor & Cia</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
