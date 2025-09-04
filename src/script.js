@@ -33,7 +33,7 @@ function fontPadrao() {
 });
 
     h1.forEach(h1 => {
-    h1.style.fontSize = '2.5rem';
+    h1.style.fontSize = '2rem';
 });
 
     h2.forEach(h2 => {
